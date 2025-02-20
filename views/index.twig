@@ -2,7 +2,53 @@
 
 {% block body %}
   <div class="container">
-    <h1>Home</h1>
-    <p>Welcome to the home page!</p>
+    <div class="row">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">Parsed data</h4>
+            <p class="card-text">Here you'll find the total amout of payements stored for the year 2005, month by month.</p>
+            <p>Payements stored in DB: {{total}}</p>
+
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Rating</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for film in ratings %}
+                  <tr>
+                    <td>{{ film.rating }}</td>
+                    <td>{{ film._count.rating }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="card-title">Plot</h4>
+            <p class="card-text">Here you'll find a plot of the total amount of payements stored for the year 2005, month by month.</p>
+            <canvas id="plot" width="400" height="150"></canvas>
+          </div>
+        </div>
+      </div>
   </div>
+  
+{% endblock %}
+
+{% block scripts %}
+  <script src="/javascripts/plot.js"></script>
 {% endblock %}

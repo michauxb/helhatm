@@ -1,0 +1,59 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+<div class="container">
+    <div class="row mt-4">
+        <h1>A sample page</h1>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-primary" role="alert">
+                <strong>Hey!</strong>
+                <p>This is a sample page, with sample layout from Boostrap. <br>
+                    As Bootstrap is reponsive, take a look at the lorem placeholder and see how the width of the column
+                    change in function of the size of your navigator
+                    Feel free to test it and add some components on it.</p>
+                <hr>
+                <p>Interrested in? Take a look <a href="https://getbootstrap.com/docs/4.6/components/alerts/">here</a>.
+                </p>
+            </div>
+            <p>This is a sample page. It is a simple page that extends the layout.twig file.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>Hereunder is the responsive content. </h3>
+                <p>
+                    Breakpoints are placed with col-xx-size where size is between 1 to
+                12 and xx cqn be <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>.
+                </p>
+        </div>
+        <div class="col-lg-8 col-md-12 mb-4">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod vero, necessitatibus laboriosam
+                exercitationem sequi modi officiis aliquid tenetur dolorum tempora ad et ipsa sapiente quia voluptatem
+                at. Praesentium, suscipit sint!
+                Id non nam, quaerat mollitia facere ratione, adipisci laboriosam dolor beatae nemo quam accusantium
+                ipsam nobis recusandae, nisi quae tempore illo laudantium molestias blanditiis natus eveniet. Velit
+                illum reiciendis quam!
+                Quibusdam cum quae laborum necessitatibus ullam. Quam reprehenderit itaque expedita obcaecati porro!
+                Ratione corrupti quas in at sint eaque voluptatum dolor. Aperiam recusandae officia itaque dignissimos
+                excepturi deserunt voluptatem alias.
+                Ipsum fugiat totam, consequatur recusandae nesciunt reprehenderit. Illum temporibus, nobis accusamus cum
+                aperiam commodi odio delectus iusto. Tempora enim, dignissimos, harum, inventore corrupti delectus quos
+                recusandae quia temporibus saepe provident?</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5>Another sample content</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero, necessitatibus
+                        laboriosam exercitationem sequi modi officiis aliquid tenetur dolorum tempora ad et ipsa sapiente
+                        quia voluptatem at. Praesentium, suscipit sint!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
