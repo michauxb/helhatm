@@ -9,6 +9,10 @@ It'll be split in those sections :
 3. Routes & templates: twig usage to generate html for us, routes sample.
 4. Prisma: this part will only place a select aggregate on a DB with sample data
 
+## Sample data
+We'll use the sample data povided by MySQL Workbench to avoid wasting time to create ones.
+![EER Schema](samplesFiles/SakilaEER.png)
+
 ## Supports
 * Presentation: https://prezi.com/view/rdGEeQXKoiYQHyBZlxU7/
 * Node doc: https://nodejs.org/api/n-api.html  
