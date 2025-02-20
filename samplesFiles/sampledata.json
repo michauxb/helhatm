@@ -1,0 +1,7 @@
+[
+    { _count: { rating: 178 }, rating: 'G' },
+    { _count: { rating: 194 }, rating: 'PG' },
+    { _count: { rating: 223 }, rating: 'PG_13' },
+    { _count: { rating: 195 }, rating: 'R' },
+    { _count: { rating: 210 }, rating: 'NC_17' }
+]
